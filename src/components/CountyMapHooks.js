@@ -48,7 +48,7 @@ Then update the quantize scale's domain with new values.
 
 Using d3.quantile lets me offset the scale to produce a more interesting map. These values discovered 
 through experiment - they cut off the top and bottom of the range because there isn't much there. 
-This brings higher contrast to the richer middle of the range.
+This brings higher contrast to the richer middle of the range. ..
 */
 
 const ChoroplethColors = _.reverse([
