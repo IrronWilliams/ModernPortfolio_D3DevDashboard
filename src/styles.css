@@ -1,0 +1,40 @@
+/*
+    CSS is applying the following:   
+    
+    .histogram rectangles (the bars) blue
+    labels white 12px font
+    buttons and .rows have some spacing
+    the .mean line is a dotted grey with gray 11px text.
+*/
+
+
+.histogram .bar rect {
+    fill: steelblue; /*steelblue*/
+    shape-rendering: crispEdges;
+  }
+  .histogram .bar text {
+    fill: #fff;
+    font: 12px sans-serif;
+  }
+  button {
+    margin-right: 0.5em;
+    margin-bottom: 0.3em !important;
+  }
+  .row {
+    margin-top: 1em;
+  }
+
+  /*
+  Styles for median line. The stroke-dasharray is what makes it dashed. 
+  3 means each 3px dash is followed by a 3px blank. 
+  
+  */
+  .mean text {
+    font: 11px sans-serif;
+    fill: grey;
+  }
+  .mean path {
+    stroke-dasharray: 3;
+    stroke: grey;
+    stroke-width: 1px;
+  }
